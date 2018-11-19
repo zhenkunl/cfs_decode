@@ -1,0 +1,7 @@
+&params
+start_date    = 20130803
+end_date      = 20130803
+var_name      = 'z500'
+input_dir     = '/Volumes/XPAND/dap/cfs_decode'
+output_dir    = '/Volumes/XPAND/dap'
+/

@@ -27,6 +27,9 @@ echo '=====> Begin to decode NCEP CFSv2 operational products <====='
 cd $decode_exe_dir
 for var_name in z500 z200 wnd850 prate tmp2m
 do
+  if [ ! -d $output_dir/$var_name ]; then
+    mkdir -p $output_dir/$var_name
+  fi
   if [ ! -e $output_dir/$var_name/$var_name-$date-cfs-forecast.dat ]; then
     if [ -e $output_dir/namelist ]; then
       rm -f $output_dir/namelist
